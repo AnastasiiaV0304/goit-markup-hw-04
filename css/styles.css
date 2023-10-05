@@ -119,7 +119,18 @@ img {
 
 .main {
   background: var(--NAVY-BLUE, #2e2f42);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
+  max-height: 600px;
+  margin: 0 auto;
 }
 
 .solutions-container {
@@ -268,6 +279,41 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
+}
+
+.team-soc-icon {
+  fill: #f4f4fd;
+}
+
 /* Our portfolio */
 
 .portfolio-set {
@@ -315,6 +361,11 @@ img {
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-footer {
   margin-bottom: 16px;
   display: inline-block;
@@ -338,4 +389,52 @@ img {
   letter-spacing: 0.32px;
   max-width: 264px;
   margin: 0;
+}
+
+.footer-logo-p {
+  margin-right: 120px;
+}
+
+.footer-soc-header {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer-soc-media-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--GREEN, #31d0aa);
+}
+
+.footer-soc-icon {
+  fill: #f4f4fd;
 }
